@@ -1,0 +1,8 @@
+function(add_sanitizer_flags)
+    add_compile_options("-fno-omit-frame-pointer")
+    add_link_options("-fno-omit-frame-pointer")
+    add_compile_options("-fsanitize=address")
+    add_link_options("-fsanitize=address")
+    add_compile_options("-fsanitize=undefined")
+    add_link_options("-fsanitize=undefined")
+endfunction(add_sanitizer_flags)
